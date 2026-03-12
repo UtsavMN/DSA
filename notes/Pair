@@ -1,0 +1,10 @@
+pair<int,int>p={1,3};
+pair<int,int>p1={1,{2,3}};
+
+to print the pair we use
+cout<<p.first<<" "<<p1.second.second;
+
+A pair can be an array aswell
+
+pair<int,int>arr[]={{1,2},{3,4},{5,6}};
+cout<<arr[1].first;
