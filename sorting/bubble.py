@@ -12,17 +12,18 @@ Explanation: 1 <= 1 <= 4 <= 4 <= 5.
 Thus the array is sorted in non-decreasing order.'''
 class Solution:
     def bubbleSort(self, nums, n):
-        self.nums=num
+        self.nums=nums
         k=1
-        while k<n:
-            for i in range(n-k):
-                if num[i]>num[i+1]:
-                    num[i],num[i+1]=num[i+1],num[i]
-            k+=1
-        return nums
+        if(k>n):
+            return nums
+        k+=1
+        self.bubbleSort(nums,n)
+        if nums[i]>nums[i+1]:
+            nums[i],nums[i+1]=nums[i+1],nums[i]
+        i+=1
 n=int(input("Enter the number of elements in the array: "))
-num=[]
+nums=[]
 for i in range(n):
-    num.append(int(input("enter the element: ")))
+    nums.append(int(input("enter the element: ")))
 s=Solution()
-print(s.bubbleSort(num,n))
+print(s.bubbleSort(nums,n))
