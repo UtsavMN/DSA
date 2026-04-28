@@ -1,0 +1,7 @@
+arrays are contsant in size i mean if i declar a array of 5 it cant be increased to 10.
+
+vector<int> v;
+v.push_back(1);
+v.push_back({1,2});
+v.emplace_back(2);
+v.emplace_back(1,2);
